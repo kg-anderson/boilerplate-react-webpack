@@ -15,6 +15,7 @@
     "build": "npm run webpack",
     "server": "node server",
     "test": "jest",
+    "knex": "knex --knexfile ./server/db/knexfile.js",
     "test:watch": "jest --watchAll",
     "webpack": "webpack --config ./client/webpack.config.js",
     "lint": "eslint --ext .js,.jsx ."
@@ -39,7 +40,10 @@
     ]
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "knex": "^0.21.17",
+    "sqlite3": "^5.0.1",
+    "superagent": "^6.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
